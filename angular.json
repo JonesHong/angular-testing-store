@@ -25,7 +25,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "mycena-store"
+            ]
           },
           "configurations": {
             "production": {
@@ -96,6 +99,37 @@
           }
         }
       }
+    },
+    "mycena-store": {
+      "root": "libs/mycena-store",
+      "sourceRoot": "libs/mycena-store/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "options": {
+            "lintFilePatterns": [
+              "libs/mycena-store/**/*.ts"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/mycena-store"
+          ],
+          "options": {
+            "jestConfig": "libs/mycena-store/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
+  },
+  "cli": {
+    "analytics": "38e81aa7-ba03-453a-8a0e-5b55b29145fc"
   }
 }
