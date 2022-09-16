@@ -4,10 +4,11 @@ import { map, mergeMap } from 'rxjs/operators';
 import { Actions } from "../mycena-store.unittest";
 import { ActionEnum, TestGroupAPISuccess } from "./group.actions";
 import { ErrorResponse } from "mycena-store";
-import { injectable } from "inversify";
+// import { injectable } from "inversify";
 import { GroupService } from "./group.service";
+import { Injectable } from "@angular/core";
 
-@injectable()
+@Injectable()
 export class GroupEffects {
     constructor(private _groupService: GroupService) { }
 

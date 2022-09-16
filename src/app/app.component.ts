@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Store } from '../../libs/yaotai-store/mycena-store.unittest';
-// import { StoreWithRelation } from '@yaotai-store/yaotai.frontend';
+// import { Store } from '../../libs/yaotai-store/mycena-store.unittest';
+import { Store } from '@yaotai/frontend';
 
 @Component({
   selector: 'app-root',

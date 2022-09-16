@@ -1,4 +1,4 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
+
 {
   "compileOnSave": false,
   "compilerOptions": {
@@ -8,8 +8,8 @@
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "strict": false /* Enable all strict type-checking options. */,
+      "experimentalDecorators": true,
+      "strict": false /* Enable all strict type-checking options. */,
     /* Additional Checks */
     "noUnusedLocals": false /* Report errors on unused locals. */,
     "noUnusedParameters": false /* Report errors on unused parameters. */,
@@ -31,7 +31,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "paths": {
-      "@yaotai/frontend": ["src/libs/yaotai-store/yaotai.frontend.ts"],
+      "@mycena/store": ["libs/mycena-store/mycena-store.unittest.ts"],
     }
   }
 }
